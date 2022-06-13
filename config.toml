@@ -1,8 +1,10 @@
+title = "sveatlo's home"
+
 # The URL the site will be built for
-base_url = "https://sveatlo.io"
+base_url = "https://sveatlo.me"
 
 # set theme
-theme = "sam"
+theme = "hermit_zola"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -14,26 +16,43 @@ build_search_index = true
 paginate_by = 5
 
 taxonomies = [
-    # You can enable/disable RSS
     {name = "categories", feed = true},
     {name = "tags", feed = true},
 ]
 
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+toc = true
+home_subtitle = "Per aspera ad astra"
 
-sam_menu = [
-    { text = "about me", link = "/about" },
-    { text = "blog", link = "/blog" },
-    { text = "github", link = "https://github.com/sveatlo", target = "_blank" },
-    { text = "linkedin", link = "https://www.linkedin.com/in/sveatlo", target = "_blank" }
+hermit_menu = [
+    # { link = "/blog", name = "Blog" },
+    { link = "/about", name = "About" }
 ]
 
-[extra.sam_footer]
-text = "contact me at <a href=\"mailto:hello@sveatlo.me\">hello@sveatlo.me</a>"
+hermit_social = [
+    { name = "github", link = "https://github.com/sveatlo" },
+    { name = "linkedin", link = "https://github.com/sveatlo" },
+    { name = "email", link = "mailto:hello@sveatlo.me" }
+]
+
+[extra.highlightjs]
+enable = true
+clipboard = true
+theme = "vs2015"
+
+[extra.disqus]
+enable = false
+# Take this from your Disqus account
+shortname = "my-supa-dupa-blog"
+
+[extra.author]
+name = "Svätopluk Hanzel"
+email = "hello@sveatlo.me"
+
+[extra.google_analytics]
+enable = false
+id = "UA-4XXXXXXX-X"
