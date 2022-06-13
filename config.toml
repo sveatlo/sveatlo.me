@@ -29,13 +29,13 @@ toc = true
 home_subtitle = "Per aspera ad astra"
 
 hermit_menu = [
-    # { link = "/blog", name = "Blog" },
-    { link = "/about", name = "About" }
+    { link = "/about", name = "About me" },
+    { link = "/blog", name = "Blog" },
 ]
 
 hermit_social = [
     { name = "github", link = "https://github.com/sveatlo" },
-    { name = "linkedin", link = "https://github.com/sveatlo" },
+    { name = "linkedin", link = "https://linkedin.com/in/sveatlo" },
     { name = "email", link = "mailto:hello@sveatlo.me" }
 ]
 

@@ -1,4 +1,5 @@
 +++
 title = "Home"
 +++
-This is my article.
+
+This is _my_ home.
